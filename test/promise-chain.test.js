@@ -1,6 +1,8 @@
-import { expect } from 'chai'
+import chai from 'chai'
 import delay from 'delay'
-import promiseChain from '../lib/promise-chain'
+import promiseChain from '../lib/promise-chain.js'
+
+const { expect } = chai;
 
 describe('promise-chain', function () {
   it('base-usage', async function () {

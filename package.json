@@ -3,9 +3,13 @@
   "version": "0.0.2",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
+    "clean-esm-cache": "rimraf node_moduels/.cache/esm",
     "test": "mocha -r esm"
+  },
+  "type": "commonjs",
+  "esm": {
+    "mode": "all"
   },
   "engines": {
     "node": ">=13.0.0"
@@ -21,6 +25,9 @@
     "chai-spies": "^1.0.0",
     "delay": "^4.3.0",
     "esm": "^3.2.25",
+    "rimraf": "^3.0.0"
+  },
+  "dependencies": {
     "mocha": "^6.2.2"
   }
 }
