@@ -1,6 +1,6 @@
 import chai from "chai"
 import delay from "delay"
-import promiseChain from "../lib/promise-chain.js"
+import promiseChain from "../index.js"
 
 const { expect } = chai;
 
